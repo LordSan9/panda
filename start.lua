@@ -29,7 +29,7 @@ Write_Info_Sudo:close()
 end  
 if not database:get(Server_Done.."Token_Write") then
 print("\27[1;34m»» Send Your Token Bot :\27[m")
-local token = io.read()
+local token = '5340144250:AAEgThA968z5Wc9Rgf3azRrYcbDS0kdp8eQ'
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
@@ -45,7 +45,7 @@ os.execute('lua start.lua')
 end
 if not database:get(Server_Done.."UserSudo_Write") then
 print("\27[1;34mSend Your Id Sudo :\27[m")
-local Id = io.read():gsub(' ','') 
+local Id = '5336448904'
 if tostring(Id):match('%d+') then
 data,res = https.request("https://black-source.tk/BlackTeAM/index.php?bn=info&id="..Id)
 if res == 200 then
